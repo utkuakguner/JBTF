@@ -9,7 +9,8 @@ export default function Testimonial() {
       _dark={{
         bg: '#3e3e3e',
       }}
-      p={50}
+      pt='70px'
+      pb='32px'
       w="full"
       alignItems="center"
       justifyContent="center"
@@ -39,7 +40,7 @@ export default function Testimonial() {
             fit="cover"
             rounded="full"
             borderStyle="solid"
-            borderWidth={2}
+            borderWidth={1}
             color="brand.500"
             _dark={{
               color: 'brand.400',
