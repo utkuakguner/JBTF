@@ -97,7 +97,7 @@ export const About = () => {
                         </Text>
                         <Text
                             mt={4}
-                            maxW="2xl"
+                            maxW="3xl"
                             fontSize="lg"
                             mx={{
                                 lg: 'auto',
@@ -154,7 +154,7 @@ export const About = () => {
                             >
                                 Türkiye'nin en yetkin yatırımcılarını bir araya
                                 getirerek bilgi ve deneyim paylaşımını
-                                sağlıyoruz. Eğitim ve Gelişim Platformu
+                                sağlıyoruz.
                             </Feature>
 
                             <Feature
