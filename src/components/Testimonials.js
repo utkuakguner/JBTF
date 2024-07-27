@@ -3,7 +3,7 @@ import { Box, Flex, HStack, Image, Link, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 
 export default function Testimonials() {
-    const Testimonial = () => (
+    const Testimonial = ({ message, name }) => (
         <Box
             w={{ base: 'xs', lg: 'md' }}
             py={4}
@@ -21,11 +21,11 @@ export default function Testimonials() {
                     base: 'center',
                     md: 'end',
                 }}
-                mt={-16}
+                mt={-20}
             >
                 <Image
-                    w={20}
-                    h={20}
+                    w={16}
+                    h={16}
                     fit="cover"
                     rounded="full"
                     borderStyle="solid"
@@ -35,11 +35,13 @@ export default function Testimonials() {
                         color: 'brand.400',
                     }}
                     alt="Testimonial avatar"
-                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80"
+                    src="https://cdn-icons-png.freepik.com/512/8212/8212616.png"
+                    backgroundColor='white'
+                    p={1}
                 />
             </Flex>
 
-            <Text
+            {/* <Text
                 color="gray.800"
                 _dark={{
                     color: 'white',
@@ -55,21 +57,20 @@ export default function Testimonials() {
                 fontWeight="bold"
             >
                 Design Tools
-            </Text>
+            </Text> */}
 
             <Text
-                mt={2}
                 color="gray.600"
                 _dark={{
                     color: 'gray.200',
                 }}
+                minH="200px"
+                fontSize="19px"
+                textAlign="left"
+                mt="24px"
             >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                dolores deserunt ea doloremque natus error, rerum quas odio
-                quaerat nam ex commodi hic, suscipit in a veritatis pariatur
-                minus consequuntur!
+                {message}
             </Text>
-
             <Flex justifyContent="end" mt={4}>
                 <Link
                     fontSize="xl"
@@ -77,8 +78,9 @@ export default function Testimonials() {
                     _dark={{
                         color: 'brand.300',
                     }}
+                    fontWeight={600}
                 >
-                    John Doe
+                    - {name}
                 </Link>
             </Flex>
         </Box>
@@ -87,13 +89,12 @@ export default function Testimonials() {
     return (
         <Box
             py="64px"
-            bg="#edf3f8"
             _dark={{
                 bg: '#3e3e3e',
             }}
             pb="32px"
         >
-            <Text fontSize={40} fontWeight={700} mb="80px">
+            <Text fontSize={34} fontWeight={700} mb="80px">
                 YORUMLAR
             </Text>
             <HStack
@@ -102,9 +103,24 @@ export default function Testimonials() {
                 justifyContent="center"
                 wrap="wrap"
             >
-                <Testimonial />
-                <Testimonial />
-                <Testimonial />
+                <Testimonial
+                    name="Celal"
+                    message={
+                        "Buy The Future'a katıldığımda, gerçekten ne kadar eksik olduğumu fark ettim. Eğitim programları ve topluluk desteği sayesinde, yatırım kararlarımda çok daha bilinçli hale geldim."
+                    }
+                />
+                <Testimonial
+                    name="Berk"
+                    message={
+                        'Bu topluluk sayesinde finansal piyasalarda yalnız olmadığımı hissettim. Özellikle ustalık sınıfları ve uzmanlardan gelen bilgiler çok değerliydi.'
+                    }
+                />
+                <Testimonial
+                    name="Nesrin"
+                    message={
+                        'Buy The Future, finansal bilgilerimi genişletmek ve kendimi geliştirmek için mükemmel bir yer oldu. Topluluk üyeleriyle olan etkileşimler ve eğitimlerden öğrendiklerim sayesinde, yatırım stratejilerimi büyük ölçüde iyileştirdim. Herkese tavsiye ederim.'
+                    }
+                />
             </HStack>
         </Box>
     );

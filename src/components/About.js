@@ -26,7 +26,7 @@ export const About = () => {
                         {props.icon}
                     </Icon>
                     <Text
-                        fontSize="lg"
+                        fontSize="xl"
                         fontWeight="medium"
                         lineHeight="6"
                         _light={{
@@ -42,6 +42,7 @@ export const About = () => {
                     _dark={{
                         color: 'gray.400',
                     }}
+                    fontSize="lg"
                 >
                     {props.children}
                 </Box>
@@ -97,7 +98,7 @@ export const About = () => {
                         <Text
                             mt={4}
                             maxW="2xl"
-                            fontSize="xl"
+                            fontSize="lg"
                             mx={{
                                 lg: 'auto',
                             }}
@@ -106,9 +107,18 @@ export const About = () => {
                                 color: 'gray.400',
                             }}
                         >
-                            Lorem ipsum dolor sit amet consect adipisicing elit.
-                            Possimus magnam voluptatum cupiditate veritatis in
-                            accusamus quisquam.
+                            Buy The Future, Türkiye'nin en kalifiye
+                            yatırımcılarını bir araya getiren bir topluluktur.
+                            Amacımız, finansal piyasalarda bilgi ve deneyim
+                            paylaşımını teşvik ederek, üyelerimizin daha
+                            bilinçli ve güvenli yatırım kararları almalarını
+                            sağlamaktır. Eğitim programlarımız, ustalık
+                            sınıflarımız ve sektörün önde gelen isimlerinden
+                            alacağımız desteklerle, yatırımcılarımızın
+                            kendilerini sürekli olarak geliştirebileceği bir
+                            ortam sunuyoruz. Buy The Future, finansal dünyada
+                            yalnızlığa son vererek, birlikte büyümeyi ve
+                            başarılı olmayı hedefleyen bir platformdur.
                         </Text>
                     </Box>
 
@@ -132,7 +142,7 @@ export const About = () => {
                             }}
                         >
                             <Feature
-                                title="Competitive exchange rates"
+                                title="En Kalifiye Yatırımcı Topluluğu"
                                 icon={
                                     <path
                                         strokeLinecap="round"
@@ -142,31 +152,44 @@ export const About = () => {
                                     />
                                 }
                             >
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.
+                                Türkiye'nin en yetkin yatırımcılarını bir araya
+                                getirerek bilgi ve deneyim paylaşımını
+                                sağlıyoruz. Eğitim ve Gelişim Platformu
                             </Feature>
 
                             <Feature
-                                title=" No hidden fees"
+                                title="Eğitim ve Gelişim Platformu"
                                 icon={
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
-                                    />
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-book"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path
+                                            stroke="none"
+                                            d="M0 0h24v24H0z"
+                                            fill="none"
+                                        />
+                                        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                                        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                                        <path d="M3 6l0 13" />
+                                        <path d="M12 6l0 13" />
+                                        <path d="M21 6l0 13" />
+                                    </svg>
                                 }
                             >
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.
+                                Kapsamlı eğitim programlarımız ve ustalık
+                                sınıflarımızla, üyelerimizin finansal piyasalar
+                                hakkında derinlemesine bilgi sahibi olmasına
+                                yardımcı oluyoruz.
                             </Feature>
 
                             <Feature
-                                title="Transfers are instant"
+                                title="Uzman Desteği ve Rehberlik"
                                 icon={
                                     <path
                                         strokeLinecap="round"
@@ -176,27 +199,36 @@ export const About = () => {
                                     />
                                 }
                             >
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.
+                                Sektörün önde gelen isimleriyle iş birliği
+                                yaparak, yatırımcılarımıza uzman desteği ve
+                                rehberlik sunuyoruz.
                             </Feature>
 
                             <Feature
-                                title="Mobile notifications"
+                                title="Birlikte Büyüme ve Başarı"
                                 icon={
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                                    />
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-trending-up"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path
+                                            stroke="none"
+                                            d="M0 0h24v24H0z"
+                                            fill="none"
+                                        />
+                                        <path d="M3 17l6 -6l4 4l8 -8" />
+                                        <path d="M14 7l7 0l0 7" />
+                                    </svg>
                                 }
                             >
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.
+                                Yatırımcılarımızın finansal dünyada yalnız
+                                hissetmeden, birlikte büyümeleri ve başarılı
+                                olmaları için güvenli bir ortam yaratıyoruz.
                             </Feature>
                         </Stack>
                     </Box>

@@ -3,12 +3,10 @@ import {
     Button,
     CloseButton,
     Flex,
-    Grid,
     HStack,
     IconButton,
     Image,
     Link,
-    Text,
     VStack,
     VisuallyHidden,
     useColorModeValue,
@@ -18,21 +16,25 @@ import {
 import { AiOutlineMenu } from 'react-icons/ai';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import React from 'react';
+import logoInverted from '../assets/img/header_logo.jpg';
+import logoPlain from '../assets/img/header_logo_inverted.jpg';
 
 export default function Navbar() {
     const bg = useColorModeValue('white', 'gray.800');
 
     const mobileNav = useDisclosure();
 
+    const logo = useColorModeValue(logoInverted, logoPlain);
+
     return (
         <>
-            <Flex height="60px" />
+            <Flex height="70px" />
             <Flex
                 alignItems="center"
                 justifyContent="space-between"
                 mx="auto"
                 w="100%"
-                h="60px"
+                h="70px"
                 px="24px"
                 position="fixed"
                 top="0px"
@@ -47,10 +49,7 @@ export default function Navbar() {
                         display="flex"
                         alignItems="center"
                     >
-                        <Image
-                            src="https://www.finder.com.au/finder-au/wp-uploads/2023/10/okx-logo.png"
-                            height="30px"
-                        />
+                        <Image src={logo} height="55px" />
                         <VisuallyHidden>Just Buy The Future</VisuallyHidden>
                     </Link>
                 </Flex>
@@ -64,9 +63,15 @@ export default function Navbar() {
                             md: 'inline-flex',
                         }}
                     >
-                        <Button variant="ghost">Features</Button>
-                        <Button variant="ghost">Pricing</Button>
-                        <Button variant="ghost">Blog</Button>
+                        <Link href="https://www.instagram.com/justbuythefuture/" target='_blank'>
+                            <Button variant="ghost">Instagram</Button>
+                        </Link>
+                        <Link href="https://x.com/justbtf"  target='_blank'>
+                            <Button variant="ghost">Twitter</Button>
+                        </Link>
+                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfVuDy7XNpyN76MWGSHJrf8-PcLscGSLHnMp3Dv05na91TvdA/viewform?usp=sf_link"  target='_blank'>
+                            <Button>Başvur</Button>
+                        </Link>
                         <ColorModeSwitcher />
                     </HStack>
                     <Box
@@ -109,15 +114,31 @@ export default function Navbar() {
                                 aria-label="Close menu"
                                 onClick={mobileNav.onClose}
                             />
-                            <Button w="full" variant="ghost">
-                                Features
-                            </Button>
-                            <Button w="full" variant="ghost">
-                                Pricing
-                            </Button>
-                            <Button w="full" variant="ghost">
-                                Blog
-                            </Button>
+                            <Link
+                                href="https://www.instagram.com/justbuythefuture/"
+                                w="full"
+                                 target='_blank'
+                            >
+                                <Button w="full" variant="ghost">
+                                    Instagram
+                                </Button>
+                            </Link>
+                            <Link
+                                href="https://x.com/justbtf"
+                                w="full"
+                                 target='_blank'
+                            >
+                                <Button w="full" variant="ghost">
+                                    Twitter
+                                </Button>
+                            </Link>
+                            <Link
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSfVuDy7XNpyN76MWGSHJrf8-PcLscGSLHnMp3Dv05na91TvdA/viewform?usp=sf_link"
+                                w="full"
+                                 target='_blank'
+                            >
+                                <Button w="full">Başvur</Button>
+                            </Link>
                             <ColorModeSwitcher />
                         </VStack>
                     </Box>

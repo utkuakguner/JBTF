@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 
 import React from 'react';
+import backgground from '../assets/img/hero.jpg';
 
 export const Hero = () => {
     const bg = useColorModeValue('white', 'gray.800');
@@ -100,20 +101,13 @@ export const Hero = () => {
                                         base: 'block',
                                         xl: 'inline',
                                     }}
-                                >
-                                    Data to enrich your{' '}
-                                </Text>
-                                <Text
-                                    display={{
-                                        base: 'block',
-                                        xl: 'inline',
-                                    }}
                                     color="brand.600"
                                     _dark={{
                                         color: 'brand.400',
                                     }}
+                                    fontWeight={700}
                                 >
-                                    online business
+                                    Just Buy The Future
                                 </Text>
                             </Text>
                             <Text
@@ -135,10 +129,14 @@ export const Hero = () => {
                                 }}
                                 color="gray.500"
                             >
-                                Anim aute id magna aliqua ad ad non deserunt
-                                sunt. Qui irure qui lorem cupidatat commodo.
-                                Elit sunt amet fugiat veniam occaecat fugiat
-                                aliqua.
+                                Türkiye’nin en kalifiye yatırımcı topluluğu Buy
+                                The Future olarak, Türkiye'nin en yetkin
+                                yatırımcılarını bir araya getiriyoruz. Amacımız,
+                                üyelerimizin finansal piyasalarda yalnız
+                                hissetmeden, birbirlerinden öğrenebileceği ve
+                                gelişebileceği bir topluluk oluşturmak.
+                                Türkiye'nin en kalifiye yatırımcılarıyla
+                                birlikte, finansal dünyada güvenle adım atın!
                             </Text>
                             <Box
                                 mt={{
@@ -155,51 +153,37 @@ export const Hero = () => {
                                 fontWeight="extrabold"
                             >
                                 <Box rounded="full" shadow="md">
-                                    <Button
+                                    <Link
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLSfVuDy7XNpyN76MWGSHJrf8-PcLscGSLHnMp3Dv05na91TvdA/viewform?usp=sf_link"
                                         w="full"
                                         display="flex"
                                         alignItems="center"
                                         justifyContent="center"
-                                        rounded="md"
-                                        _hover={{
-                                            bg: 'brand.700',
-                                        }}
-                                        px={{
-                                            base: 8,
-                                            md: 10,
-                                        }}
-                                        py={{
-                                            base: 3,
-                                            md: 4,
-                                        }}
-                                        cursor="pointer"
+                                        target="_blank"
                                     >
-                                        Get started
-                                    </Button>
-                                </Box>
-                                <Box mt={[3, 0]} ml={[null, 3]}>
-                                    <Button
-                                        w="full"
-                                        display="flex"
-                                        alignItems="center"
-                                        justifyContent="center"
-                                        px={{
-                                            base: 8,
-                                            md: 10,
-                                        }}
-                                        py={{
-                                            base: 3,
-                                            md: 4,
-                                        }}
-                                        border="solid 1px transparent"
-                                        rounded="md"
-                                        _hover={{
-                                            bg: 'brand.200',
-                                        }}
-                                        cursor="pointer"
-                                    >
-                                        Live demo
-                                    </Button>
+                                        <Button
+                                            w="full"
+                                            display="flex"
+                                            alignItems="center"
+                                            justifyContent="center"
+                                            rounded="md"
+                                            _hover={{
+                                                bg: 'brand.700',
+                                            }}
+                                            px={{
+                                                base: 8,
+                                                md: 10,
+                                            }}
+                                            py={{
+                                                base: 3,
+                                                md: 4,
+                                            }}
+                                            cursor="pointer"
+                                            size="lg"
+                                        >
+                                            Hemen Başvur
+                                        </Button>
+                                    </Link>
                                 </Box>
                             </Box>
                         </Box>
@@ -232,7 +216,7 @@ export const Hero = () => {
                     h={[56, 72, 96, 'full']}
                     w="full"
                     fit="cover"
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+                    src={backgground}
                     alt=""
                     loading="lazy"
                 />
