@@ -15,12 +15,13 @@
         "react-dom": "^18.3.1",
         "react-icons": "^3.11.0",
         "react-scripts": "5.0.1",
-        "web-vitals": "^2.1.4"
+        "web-vitals": "^2.1.4",
+        "serve": "^14.2.3"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "prod-build": "npm install serve && npm install && npm run build",
+        "prod-build": "npm install && npm run build",
         "prod-start": "serve -s build"
     },
     "eslintConfig": {
@@ -37,8 +38,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "devDependencies": {
-        "serve": "^14.2.3"
     }
 }
