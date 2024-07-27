@@ -56,7 +56,7 @@ export const Hero = () => {
                         <polygon points="50,0 100,0 50,100 0,100" />
                     </Icon>
                     <Box
-                         maxW={{
+                        maxW={{
                             base: '7xl',
                         }}
                         px={{

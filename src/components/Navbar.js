@@ -40,19 +40,19 @@ export default function Navbar() {
                 backgroundColor={bg}
                 zIndex={3}
             >
-                <Flex>
+                <Flex align="center">
                     <Link
                         href="/"
                         title="Just Buy The Future Home Page"
                         display="flex"
                         alignItems="center"
                     >
-                        <Image />
+                        <Image
+                            src="https://www.finder.com.au/finder-au/wp-uploads/2023/10/okx-logo.png"
+                            height="30px"
+                        />
                         <VisuallyHidden>Just Buy The Future</VisuallyHidden>
                     </Link>
-                    <Text fontSize="xl" fontWeight="medium" ml="2">
-                        Just Buy The Future
-                    </Text>
                 </Flex>
                 <HStack display="flex" alignItems="center" spacing={1}>
                     <HStack
@@ -63,7 +63,6 @@ export default function Navbar() {
                             base: 'none',
                             md: 'inline-flex',
                         }}
-                   
                     >
                         <Button variant="ghost">Features</Button>
                         <Button variant="ghost">Pricing</Button>

@@ -1,9 +1,12 @@
 import { Box, Flex, Grid } from '@chakra-ui/react';
 
+import { About } from './components/About';
+import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
 import Navbar from './components/Navbar';
+import { Partners } from './components/Partners';
 import React from 'react';
-import Testimonial from './components/Testimonial';
+import Testimonials from './components/Testimonials';
 
 function App() {
     return (
@@ -11,11 +14,10 @@ function App() {
             <Grid minH="100vh">
                 <Navbar />
                 <Hero />
-                <Flex>
-                    <Testimonial />
-                    <Testimonial />
-                    <Testimonial />
-                </Flex>
+                <Partners />
+                <Testimonials />
+                <About />
+                <Footer />
             </Grid>
         </Box>
     );
