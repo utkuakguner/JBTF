@@ -14,7 +14,7 @@ function App() {
             <Grid minH="100vh">
                 <Navbar />
                 <Hero />
-                <Partners />
+                {/* <Partners /> */}
                 <Testimonials />
                 <About />
                 <Footer />
